@@ -1,0 +1,178 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  background-color: #CD853F;
+  border: 3px outset #A52A2A;
+}
+
+.logo {
+  padding: 5px;
+  animation: logo 3s linear infinite;
+}
+
+@keyframes logo {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+  background-color: #FFF8DC;
+  border: 3px outset #A52A2A;
+  margin-top: 5px;
+}
+
+.menu_page {
+  background-color: #FFE4C4;
+  margin: 5px;
+  padding: 5px;
+  border: 3px inset #D2B48C;
+}
+
+.menu_item {
+  padding: 5px;
+}
+
+button {
+  width: 100%;
+}
+
+.info {
+  background-color: #FFE4C4;
+  margin-top: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border: 3px inset #D2B48C;
+  text-align: left;
+  padding: 3px;
+}
+
+.all {
+  border: 3px inset #A52A2A;
+  background-color: #FFF8DC;
+  margin-top: 5px;
+  margin-left: 5px;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  background-color: #CD853F;
+  justify-content: center;
+  border: 3px inset #A52A2A;
+  margin-top: 5px;
+}
+
+.help {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 50%;
+  padding: 5px;
+}
+
+.make {
+  text-align: center;
+  width: 50%;
+}
+
+.imgg {
+  text-align: center;
+  width: 50px;
+  margin: 5px 5px 5px 5px;
+}
+
+/*.logik {
+  padding: 5px;
+  transform: rotateY(180deg);
+}*/
+
+@media screen and (max-width: 768px) {
+
+  main {
+    flex-direction: column;
+  }
+
+  .all {
+    margin-left: 0px;
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+
+  }
+
+  /*.logik {
+    border: 3px inset #A52A2A;
+    margin: auto;
+  }*/
+
+  .make {
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+
+  }
+
+  .imgg {
+    border: 3px inset #A52A2A;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center
+  }
+
+  /*.logik {
+    width: 100%;
+    font-size: 10px;
+    border: none;
+  }*/
+
+  .make {
+    width: 100%;
+    font-size: 10px;
+    border: none;
+  }
+
+  .imgg {
+    width: 25px;
+    font-size: 10px;
+    align-items: center;
+  }
+
+ .all {
+  font-size: 10px;
+ }
+ .menu {
+  font-size: 10px;
+ }
+}
